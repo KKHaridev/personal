@@ -23,38 +23,94 @@
         </div>
         <nav class="terminal-menu">
           <ul>
-            <li><a class="menu-item" href="/">Home</a></li>
-            <li><a class="menu-item active">About</a></li>
-            <li><a class="menu-item" href="#Works">Works</a></li>
+            <li><a class="menu-item active" href="/">Home</a></li>
+            <li id="skills"><a class="menu-item">Skills</a></li>
+            <li id="works"><a class="menu-item" href="#Works">Works</a></li>
             <li id="contact"><a class="menu-item" href="#Contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section class="sec1">
-      <header><h2>LATEST WORKS</h2></header>
+    <section class="main">
+      <h1>$<span id="typed"></span></h1>
+      <h2>> Web Designer</h2>
+      <p>A young enthusiast pursuing B.Tech in Computer Science and Engineering.Having an ability to work with a large team.Eager to learn new skills, frameworks and back-end development.
+                        </p>
+    </section>
+
+    <section class="skill hidden">
+      <div class="skills">
+        <header><h2>skills@haridev</h2></header>
+      <div class="skillbox">
+        <h3>HTML</h3>
+        <div class="progress-bar progress-bar-no-arrow">
+        <div
+          class="progress-bar-filled"
+          style="width: 90%"
+          data-filled="Loading 90%"
+        ></div>
+      </div>
+      <h3>CSS</h3>
+        <div class="progress-bar progress-bar-no-arrow">
+        <div
+          class="progress-bar-filled"
+          style="width: 92%"
+          data-filled="Loading 92%"
+        ></div>
+      </div>
+      <h3>BOOTSTRAP</h3>
+        <div class="progress-bar progress-bar-no-arrow">
+        <div
+          class="progress-bar-filled"
+          style="width: 88%"
+          data-filled="Loading 88%"
+        ></div>
+      </div>
+      <h3>C</h3>
+        <div class="progress-bar progress-bar-no-arrow">
+        <div
+          class="progress-bar-filled"
+          style="width: 75%"
+          data-filled="Loading 75%"
+        ></div>
+      </div>
+      <h3>GIT AND GITHUB</h3>
+        <div class="progress-bar progress-bar-no-arrow">
+        <div
+          class="progress-bar-filled"
+          style="width: 75%"
+          data-filled="Loading 75%"
+        ></div>
+      </div>
+      
+      </div>
+      </div>
+
+    </section>
+
+
+
+
+
+    <section class="sec1 hidden">
+      <div class="wrk">
+        <header><h2>latest_works</h2></header>
       <div class="image-grid">
-        <a href="https://picsum.photos" style="border: none;"><img src="https://picsum.photos/200/300?random&1"
+        <a href="https://cryptomalluclub.in" style="border: none;"><img src="./assets/image.webp"
             width="auto" height="auto" alt="random image" /></a>
-        <a href="https://picsum.photos" style="border: none;"><img src="https://picsum.photos/200/300?random&2"
+        <a href="https://cryptochallengers.org" style="border: none;"><img src="./assets/cc.webp"
             width="auto" height="auto" alt="random image" /></a>
-        <a href="https://picsum.photos" style="border: none;"><img src="https://picsum.photos/200/300?random&3"
-            width="auto" height="auto" alt="random image" /></a>
-        <a href="https://picsum.photos" style="border: none;"><img src="https://picsum.photos/200/300?random&4"
-          width="auto" height="auto" alt="random image" /></a>
-          <a href="https://picsum.photos" style="border: none;"><img src="https://picsum.photos/200/300?random&5"
-            width="auto" height="auto" alt="random image" /></a>
-            <a href="https://picsum.photos" style="border: none;"><img src="https://picsum.photos/200/300?random6"
-              width="auto" height="auto" alt="random image" /></a>
+      </div>
       </div>
     </section>
 
 
 
     <section class="sec2 hidden">
-      <header>
-        <h2 id="Forms">Forms</h2>
+      <div class="msg">
+        <header>
+        <h2 id="Forms">contact</h2>
       </header>
       <form class="content">
         <fieldset>
@@ -77,32 +133,48 @@
           </div>
         </fieldset>
       </form>
-    </section>
-
-    <section class="sec3">
-      <div class="progress-bar progress-bar-no-arrow">
-        <div
-          class="progress-bar-filled"
-          style="width: 10%"
-          data-filled="Loading 10%"
-        ></div>
       </div>
     </section>
 
 
 
 
-
-
     <footer>
+      <section class="tools">
+      <header><h2>tools@haridev</h2></header>
+      <h3>> LINUX</h3>
+      <h3>> VSCODE</h3>
+      <h3>> SUBLIME</h3>
+      <h3>> BRAVE</h3>
 
+    </section>
+
+
+
+    <section class="footer">
+      <header><h2>find me online</h2></header>
+      <ul>
+        <li><a href="https://telegram.me/Dev_algata">
+          telegram
+        </a></li>
+        <li><a href="https://in.linkedin.com/in/kkharidev">
+          linkedin
+        </a></li>
+        <li><a href="https://github.com/kkharidev">
+          github
+        </a></li>
+        <li><a href="https://www.instagram.com/kkharidev178">
+          instagram
+        </a></li>
+      </ul>
+    </section>
     </footer>
 
   </div>
 
 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="./js/index.js"></script>
   <script src="./js/winbox.bundle.js"></script>
 </body>

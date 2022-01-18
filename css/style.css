@@ -1,6 +1,15 @@
 :root{
     --primary-color:rgb(52, 56, 53);
 }
+body{
+    height: 100vh;
+}
+h3{
+    color: rgb(5, 170, 18) !important;
+}
+h2{
+    color: red !important;
+}
 
 .terminal{
     background: #111111;
@@ -17,24 +26,57 @@
 .menu-item{
     color: rgb(5, 170, 18) !important;
 }
-.active{
-    color: white !important;
+.menu-item:hover {
+  color: red !important;
 }
-.sec1 .image-grid{
+.active{
+    color: red !important;
+}
+.wb-body .image-grid{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.sec1 img{
+.wb-body .image-grid img{
+    width: 300px;
     height: auto;
+    margin-top: 10px;
 }
 .wb-body{
     background: black;
 }
+.main{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main h1{
+    font-size: 2rem;
+    color: rgb(5, 170, 18) !important;
+}
+.main h2{
+    color: rgb(5, 170, 18) !important;
+}
+#typed,.typed-cursor{
+    color: rgb(5, 170, 18);
+    font-size: 2rem;
+}
 .sec2{
     display: grid;
     justify-content: center;
+}
+.skills{
+    margin: 20px;
+}
+.progress-bar-filled{
+    background-color: #16302B;
+}
+.wrk h2,.msg h2{
+    margin-top: 1rem;
 }
 form label{
     color:rgb(5, 170, 18);
@@ -47,4 +89,35 @@ textarea::placeholder,textarea {
 }
 .hidden{
     display: none;
+}
+footer{
+    display: grid;
+    grid-template-areas: "tools links";
+}
+.tools{
+    grid-area: tools;
+}
+.footer{
+    grid-area: links;
+    text-align: left;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ul{
+    padding-bottom: 2rem;
+}
+.footer ul li,.footer ul li::after{
+    padding-top: 1rem !important;
+}
+@media (max-width: 576px){
+    footer{
+    display: grid;
+    grid-template-areas: "tools"
+    " links";
+}
+.footer{
+    align-items: flex-start;
+}
 }
