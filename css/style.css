@@ -1,0 +1,50 @@
+:root{
+    --primary-color:rgb(52, 56, 53);
+}
+
+.terminal{
+    background: #111111;
+    color: rgb(5, 170, 18) !important;
+
+}
+.terminal-prompt{
+    color: rgb(5, 170, 18) !important;
+    
+}
+.terminal-logo .no-style{
+    color: rgb(5, 170, 18) !important;
+}
+.menu-item{
+    color: rgb(5, 170, 18) !important;
+}
+.active{
+    color: white !important;
+}
+.sec1 .image-grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.sec1 img{
+    height: auto;
+}
+.wb-body{
+    background: black;
+}
+.sec2{
+    display: grid;
+    justify-content: center;
+}
+form label{
+    color:rgb(5, 170, 18);
+}
+
+input::placeholder,
+textarea::placeholder,textarea {
+  color: rgb(5, 170, 18) !important;
+  opacity: 1;
+}
+.hidden{
+    display: none;
+}
