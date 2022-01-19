@@ -69,3 +69,31 @@ var typed = new Typed("#typed", {
     startDelay: 500,
     /*loop: true,*/
 });
+
+
+
+    document.getElementById("submit-form").addEventListener(
+        "submit",
+        function (e) {
+            const google_script_url =
+                "https://script.google.com/macros/s/AKfycbyUVggNEwle7s3RaL8TSVILfBd4TcwIp6XipGFxMao32vnKs7uwe7MBi-sLONIHcDk/exec";
+
+            const request = new XMLHttpRequest();
+            request.open("POST", google_script_url, true);
+            request.setRequestHeader(
+                "Content-Type",
+                "application/x-www-form-urlencoded"
+            );
+            const data = document.getElementById("submit-form").serialize();
+            try {
+                request.send(data);
+                alert("Sent successfully!");
+                document.getElementById("submit-form").reset();
+                e.preventDefault();
+            } catch (err) {
+                alert("Sending failed.");
+                window.location.reload();
+            }
+        },
+        false
+    );

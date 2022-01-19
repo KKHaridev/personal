@@ -1,11 +1,12 @@
 :root{
-    --primary-color:rgb(52, 56, 53);
+    --primary-color: rgb(52, 56, 53) !important;
+    --hack-green : rgb(5,170,18) !important;
 }
 body{
     height: 100vh;
 }
 h3{
-    color: rgb(5, 170, 18) !important;
+    color: var(--hack-green) !important;
 }
 h2{
     color: red !important;
@@ -13,18 +14,18 @@ h2{
 
 .terminal{
     background: #111111;
-    color: rgb(5, 170, 18) !important;
+    color: var(--hack-green) !important;
 
 }
 .terminal-prompt{
-    color: rgb(5, 170, 18) !important;
+    color: var(--hack-green) !important;
     
 }
 .terminal-logo .no-style{
-    color: rgb(5, 170, 18) !important;
+    color: var(--hack-green) !important;
 }
 .menu-item{
-    color: rgb(5, 170, 18) !important;
+    color: var(--hack-green) !important;
 }
 .menu-item:hover {
   color: red !important;
@@ -56,13 +57,16 @@ h2{
 
 .main h1{
     font-size: 2rem;
-    color: rgb(5, 170, 18) !important;
+    color: var(--hack-green) !important;
 }
 .main h2{
-    color: rgb(5, 170, 18) !important;
+    color: var(--hack-green) !important;
+}
+.main p{
+    text-align: center;
 }
 #typed,.typed-cursor{
-    color: rgb(5, 170, 18);
+    color: var(--hack-green);
     font-size: 2rem;
 }
 .sec2{
@@ -79,12 +83,12 @@ h2{
     margin-top: 1rem;
 }
 form label{
-    color:rgb(5, 170, 18);
+    color:var(--hack-green);
 }
 
 input::placeholder,
 textarea::placeholder,textarea {
-  color: rgb(5, 170, 18) !important;
+  color: var(--hack-green) !important;
   opacity: 1;
 }
 .hidden{
@@ -104,20 +108,25 @@ footer{
     display: flex;
     flex-direction: column;
 }
-
+.footer h2{
+    margin-bottom: 0rem !important;
+}
 .footer ul{
     padding-bottom: 2rem;
 }
 .footer ul li,.footer ul li::after{
-    padding-top: 1rem !important;
+    padding-top: .8rem !important;
 }
 @media (max-width: 576px){
     footer{
     display: grid;
     grid-template-areas: "tools"
     " links";
-}
-.footer{
-    align-items: flex-start;
+    }
+    .footer{
+        align-items: flex-start;
+    }
+    .main p{
+    text-align: left;
 }
 }
