@@ -90,6 +90,13 @@ HTMLElement.prototype.serialize = function () {
 };
 
 ready(() => {
+
+    const copyright = document.getElementById("copyright");
+    const date = new Date();
+    const year = date.getFullYear();
+    const copyright_str = `&#169; ${year} <a href="#">K K HARIDEV</a> All Rights Reserved`;
+    copyright.innerHTML = copyright_str;
+
     document.getElementById("submit-form").addEventListener(
         "submit",
         function (e) {

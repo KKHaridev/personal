@@ -117,6 +117,19 @@ footer{
 .footer ul li,.footer ul li::after{
     padding-top: .8rem !important;
 }
+.footer ul li a{
+    color: #81807f !important;
+}
+.footer ul li a:hover{
+    color: white !important;
+}
+#copyright{
+    text-align: center;
+    width: 100%;
+}
+#copyright a{
+    color: #13681d !important;
+}
 @media (max-width: 576px){
     footer{
     display: grid;
