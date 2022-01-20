@@ -71,12 +71,11 @@ var typed = new Typed("#typed", {
 });
 
 
-
     document.getElementById("submit-form").addEventListener(
         "submit",
         function (e) {
             const google_script_url =
-                "https://script.google.com/macros/s/AKfycbyUVggNEwle7s3RaL8TSVILfBd4TcwIp6XipGFxMao32vnKs7uwe7MBi-sLONIHcDk/exec";
+                "https://script.google.com/macros/s/AKfycbyQRViOnZkxkuPg_5XnpZxichQYtij06RY2XpYLyEDot5hx4sSJfaNXbfi2_M1FUgI/exec";
 
             const request = new XMLHttpRequest();
             request.open("POST", google_script_url, true);
