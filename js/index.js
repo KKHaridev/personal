@@ -69,8 +69,27 @@ var typed = new Typed("#typed", {
     startDelay: 500,
     /*loop: true,*/
 });
+function ready(fn) {
+    if (document.readyState != "loading") {
+        fn();
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+}
+HTMLElement.prototype.serialize = function () {
+    var res = "";
+    var elements = this.querySelectorAll("input, select, textarea");
+    for (let i = 0; i < elements.length; i++) {
+        const e = elements[i];
+        if (e.name) {
+            res = res + `${e.name}=${e.value}&`;
+        }
+    }
+    console.log(res);
+    return res;
+};
 
-
+ready(() => {
     document.getElementById("submit-form").addEventListener(
         "submit",
         function (e) {
@@ -96,3 +115,4 @@ var typed = new Typed("#typed", {
         },
         false
     );
+});
