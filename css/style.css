@@ -65,6 +65,14 @@ h2{
 .main p{
     text-align: center;
 }
+a .btn-primary{
+    border: #13681d 1px solid !important;
+    color: var(--hack-green) !important;
+}
+a .btn-primary:hover{
+    color: red !important;
+    background: #111111 !important;
+}
 #typed,.typed-cursor{
     color: var(--hack-green);
     font-size: 2rem;
