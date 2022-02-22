@@ -2,4 +2,4 @@
 
 
 
-https://kkharidev.algata.ga
+https://kkharidev.algata.in
